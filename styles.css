@@ -1,0 +1,353 @@
+/* Reset default styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .hero {
+    background-color: #eee;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .about, .services {
+    padding: 2rem;
+  }
+  
+  main > section:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .services article {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer form {
+    margin-bottom: 1rem;
+  }
+  
+  .social-media a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  
+    .about, .services {
+      padding: 2rem 1rem;
+    }
+  
+    .services article {
+      padding: 1rem 0.5rem;
+    }
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ddd; /* Placeholder for the image */
+  }
+  
+  .about-text {
+    flex: 2;
+    max-width: 50%;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image,
+    .about-text {
+      max-width: 100%;
+    }
+  }
+
+  /* Portfolio Page Styles */
+
+.portfolio-header {
+    background-image: url('img/office-865091_1280.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .portfolio-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .portfolio-intro {
+    padding: 2rem 1rem;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .portfolio-categories ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .portfolio-categories li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .portfolio-categories a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    border-bottom: 3px solid transparent; /* Non-active state */
+  }
+  
+  .portfolio-categories a:hover,
+  .portfolio-categories a:focus {
+    border-bottom: 3px solid #ffc107; /* Active state color */
+  }
+  
+  .portfolio-category {
+    padding: 2rem;
+  }
+  
+  .portfolio-category h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .portfolio-category article {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .portfolio-category img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 1px solid #ddd; /* Placeholder style */
+  }
+  
+  .portfolio-category p {
+    margin-top: .5rem;
+  }
+  
+  /* Article card constraints */
+  .portfolio-category article {
+    max-width: 350px;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer .social-links a {
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  footer .social-links img {
+    width: 24px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .portfolio-categories ul {
+      flex-direction: column;
+    }
+  
+    .portfolio-categories li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+    
+    .portfolio-category article {
+      /* Adjust article card layout for mobile */
+      max-width: 100%;
+      min-width: auto;
+    }
+  }
+  
+  /* About Page Styles */
+
+.about-header {
+    background-image: url('img/office-865091_1280.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .services article {
+    display: inline-block;
+    margin: 1rem;
+    max-width: 200px; /* Adjust as needed */
+  }
+  
+  .services img {
+    margin-bottom: 1rem;
+  }
+  
+  .clients {
+    background: #ffd700; /* Gold background for the clients section */
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .clients .client-logos img {
+    margin: 1rem;
+    opacity: 0.8;
+  }
+  
+  .clients .client-logos img:hover {
+    opacity: 1;
+  }
+  
+  .contact-us {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+  }
+  
+  .contact-form,
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info iframe {
+    width: 100%;
+    height: 250px; /* Adjust as needed */
+    border: none;
+    margin-top: 1rem;
+  }
+  
+  /* Footer Styles */
+  /* (Include same footer styles as before) */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-us {
+      flex-direction: column;
+    }
+  
+    .contact-info iframe {
+      height: 200px; /* Adjust as needed for smaller screens */
+    }
+  }
+  

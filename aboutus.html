@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Name</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+</head>
+<body>
+
+<header>
+  <img src="img/logo1.png" alt="Company Logo" id="logo">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="about-header">
+    <h1>About Our Company</h1>
+    <!-- Background image would be set in CSS -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <a href="contact.html" class="btn">Get in touch with us</a>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <article>
+      <img src="branding-icon.png" alt="Branding">
+      <h3>Branding</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+    <!-- Repeat for each service -->
+  </section>
+
+  <section class="clients">
+    <h2>Some of our clients</h2>
+    <div class="client-logos">
+      <!-- Client logos here -->
+      <img src="client1.png" alt="Client 1">
+      <img src="client2.png" alt="Client 2">
+      <img src="client3.png" alt="Client 3">
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h2>Contact information</h2>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus...</p>
+      <address>
+        B R A Veien 4, 1757 Halden<br>
+        69 60 80 00<br>
+        postmottak@hiof.no
+      </address>
+      <!-- Embed Google Maps -->
+      <iframe src="https://maps.google.com/maps?q=Halden&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+    <form>
+      <label for="newsletter">Sign up for our newsletter</label>
+      <input type="email" id="newsletter" name="newsletter" placeholder="Your email">
+      <button type="submit">Sign me up</button>
+    </form>
+    <p>Company copyright 2023</p>
+    <nav class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
